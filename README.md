@@ -4,6 +4,7 @@ Dexamethasone (DEX) has shown anti-cancer efficacy and anti-estrogenic activity 
 
 ## Structure of the repository
 
+# DEXCancer model
 ```
 ┌──ga_cancer.m
 ├──direct.m
@@ -20,9 +21,23 @@ Dexamethasone (DEX) has shown anti-cancer efficacy and anti-estrogenic activity 
 - `result_plot.m`: contains the script for plotting simulated protein profiles and expression level of signature genes
 - `level_doses.m`: contains the script for plotting simulated levels of signature genes under one, two, and three doses of DEX treatment respectively
 
+
+# Bioinformatics_anlaysis
+```
+┌──DEG_anlaysis.R
+├──TF_analysis.R
+├──enrichment_analysis.R
+├──clinical_analysis.R
+```
+- `DEG_anlaysis.R`: contains the script for identifying differential expressed genes after DEX treatment.
+- `TF_analysis.R`: contains the script for identifying the upstream transcriptional factors of DEG list.
+- `enrichment_analysis.R`: contains the script for functional enrichment analysis 
+- `clinical_analysis.R`: contains the script for analyzing the clinical significance
+
 ## Software Requirement
 
 MATLAB
+R
 
 ## Contact
 
