@@ -36,8 +36,7 @@ Dexamethasone (DEX) has shown anti-cancer efficacy and anti-estrogenic activity 
 
 ## Software Requirement
 
-MATLAB
-R
+MATLAB; R
 
 ## Contact
 
