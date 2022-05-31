@@ -24,15 +24,18 @@ Dexamethasone (DEX) has shown anti-cancer efficacy and anti-estrogenic activity 
 
 ### Bioinformatics_anlaysis
 ```
-┌──DEG_anlaysis.R
+┌──main.R
 ├──TF_analysis.R
-├──enrichment_analysis.R
+├──enrich_analysis.R
 ├──clinical_analysis.R
 ```
-- `DEG_anlaysis.R`: contains the script for identifying differential expressed genes after DEX treatment.
+- `main.R`: contains the script for main bioinformatics analysis with optional choice of downstream alaysis.
 - `TF_analysis.R`: contains the script for identifying the upstream transcriptional factors of DEG list.
-- `enrichment_analysis.R`: contains the script for functional enrichment analysis 
+- `enrich_analysis.R`: contains the script for functional enrichment analysis 
 - `clinical_analysis.R`: contains the script for analyzing the clinical significance
+
+## Command line instructions 
+Rscript main.R
 
 ## Software Requirement
 
