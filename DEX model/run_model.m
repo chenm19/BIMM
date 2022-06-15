@@ -1,11 +1,11 @@
 %%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%
-% Script for plotting simulated protein profiles of signature genes SMAD2 
-% and TGFβ1, simulated expression level of signature genes FOXO3 and
+% Script for running model and plotting simulated protein profiles of signature 
+% genes SMAD2 and TGFβ1, simulated expression level of signature genes FOXO3 and
 % TGFβR1, and DEX level over time after one dose of DEX treatment applied  
 % to the A549 cells
 %&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%
 clc; clear; close all;
-load('cancer_ga_outputs53.mat', "value", "error");
+load('cancer_ga_outputs53.mat', "value", "error"); %parameters can be switched here
 % load('gene_percentile.mat');
 
 Inits = value;
@@ -69,7 +69,7 @@ extraInputs = {'fontsize',20};
 % xlabel('Time',extraInputs{:});
 % ylabel('Population',extraInputs{:});
 % box on
-path ='./result';
+path ='./';
 % saveas(gcf, fullfile(path, ['ga_out1','.png'] ));
 
 %% figure of protein level of SMAD23 
