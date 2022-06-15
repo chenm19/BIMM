@@ -5,12 +5,16 @@ Dexamethasone (DEX) has shown anti-cancer efficacy and anti-estrogenic activity 
 ## Structure of the repository
 
 ### DEX model
+For Windows users: matlab -nodisplay -nosplash -nodesktop -r “run_model ; exit”<br />
+For Mac users: /Applications/MATLAB_R2022a.app/bin/matlab -nodisplay -nosplash -nodesktop -r “run_model ; exit”<br />
+Lines above run the model and plot the graphs with the parameter values loaded. Notice the MATLAB version should be modified to the version you have. Please make sure MATLAB R2017a or any later version is downloaded.<br />
+
 ```
 ┌──ga_cancer.m
 ├──direct.m
 ├──model.m
 ├──fitness.m
-├──result_plot.m
+├──run_model.m
 └──level_doses.m
 ```
 
@@ -18,7 +22,7 @@ Dexamethasone (DEX) has shown anti-cancer efficacy and anti-estrogenic activity 
 - `direct.m`: contains the script for running Direct Optimization Algorithm for optimizing parameters.
 - `model.m`: contains the script for ordinary differential equations of tumorigenesis regulatory network model
 - `fitness.m`: contains the script for objective functions of parameter optimizations intumorigenesis regulatory network model
-- `result_plot.m`: contains the script for plotting simulated protein profiles and expression level of signature genes
+- `run_model.m`: contains the script for running model with parameters loaded and plotting simulated protein profiles and expression level of signature genes
 - `level_doses.m`: contains the script for plotting simulated levels of signature genes under one, two, and three doses of DEX treatment respectively
 
 
@@ -27,7 +31,7 @@ Dexamethasone (DEX) has shown anti-cancer efficacy and anti-estrogenic activity 
 ┌──main.R
 ├──TF_analysis.R
 ├──enrich_analysis.R
-├──clinical_analysis.R
+└──clinical_analysis.R
 ```
 - `main.R`: contains the script for main bioinformatics analysis with optional choice of downstream alaysis.
 - `TF_analysis.R`: contains the script for identifying the upstream transcriptional factors of DEG list.
